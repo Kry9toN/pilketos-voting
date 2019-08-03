@@ -41,8 +41,8 @@
       <div class="container text-center mt-2">
         <div class="card text-white bg-dark mb-3">
           <div class="card-body">
-            <h1 class="display-6">Welcome To KryPtoN Project!</h1>
-            <p class="lead">Try to meet your mobile needs</p>
+            <h1 class="display-6">Selamat datang</h1>
+            <p class="lead">Pikasis SMKN 1 UDANAWU</p>
             <a class="btn btn-danger" href="#login" rol="buttom">Login</a>
           </div>
         </div>
