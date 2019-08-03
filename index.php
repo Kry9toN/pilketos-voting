@@ -9,51 +9,32 @@
 		<!-- <script src="assets/js/bootstrap.js"></script> -->
 		<script src="assets/js/zero.js"></script>
 	</head>
-	<body id="home" class="content danger">
+	<body id="home" class="bg-secondary">
 		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-fixed">
-			<div class="container">
-				<!-- Header -->
-				<div class="navbar-header">
-					<a href="." class="navbar-brand">
-						<img class="logo" src="gambar/logokecil.png"/>
-						<h1>Pilkasis</h1>
-						<h2>SMA Pro An-Nizhomiyah</h2>
-					</a>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#zero-menu" aria-expanded="true" id="toggle-button">
-						<span class="sr-only">Menu Utama</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-				<!-- End Header -->
-				<!-- Menu Navigation -->
-				<div class="navbar-collapse collapse" id="zero-menu" aria-expanded="true">
-					<ul class="nav navbar-right">
+		      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container">
+            <a class="navbar-brand text-hide" href="/">krypton kernel
+			  <img src="/asset/img/icon.png" class="rounded-circle d-block" width="36" height="36" viewBox="0 0 612 612" facusable="false">
+            </a>
+            <a class="navbar-brand" href="/">KryPtoN Project</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
 						<li>
 							<a href="#home" rel="page-scroll">Beranda</a>
-						</li>
-						<li>
-							<a href="#kandidat" rel="page-scroll" title="Kandidat Ketua OSIS">Kandidat</a>
 						</li>
 						<li>
 							<a href="#galeri" rel="page-scroll" title="Galeri Kegiatan OSIS">Galeri</a>
 						</li>
 						<li>
-							<a href="#osis" rel="page-scroll" title="Personil OSIS Sekarang">OSIS</a>
-						</li>
-						<li>
 							<a href="#login" rel="page-scroll" title="Login Sebagai ...">Login</a>
 						</li>
-						<li>
-							<a href="#contact" rel="page-scroll" title="Hubungi Kami">Hubungi</a>
-						</li>
-					</ul>
-				</div>
-				<!-- End Menu Navigation -->
-			</div>
-		</nav>
+            </ul>
+          </div>
+        </div>
+      </nav>
 		<!-- End Navigation -->
 
 		<!-- Cover -->
