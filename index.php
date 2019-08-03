@@ -1,17 +1,37 @@
-<html>
-	<head>
-		<title>Pilkasis | SMA Islam An-Nizhomiyah</title>
-		<link rel="shortcut icon" href="gambar/logokecil.png">
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/zero.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<script src="assets/js/jquery.2.1.1.min.js"></script>
-		<!-- <script src="assets/js/bootstrap.js"></script> -->
-		<script src="assets/js/zero.js"></script>
-	</head>
-	<body id="home" class="bg-secondary">
-		<!-- Navigation -->
-		      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<!doctype html>
+<html lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/asset/img/icon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139130791-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-139130791-1');
+</script>
+
+    <!-- google adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7142462988454705",
+          enable_page_level_ads: true
+     });
+</script>
+   
+    <title>KryPtoN Project</title>
+    
+  </head>
+  <body class="bg-secondary">
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
             <a class="navbar-brand text-hide" href="/">krypton kernel
 			  <img src="/asset/img/icon.png" class="rounded-circle d-block" width="36" height="36" viewBox="0 0 612 612" facusable="false">
@@ -22,39 +42,35 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-						<li>
-							<a href="#home" rel="page-scroll">Beranda</a>
-						</li>
-						<li>
-							<a href="#galeri" rel="page-scroll" title="Galeri Kegiatan OSIS">Galeri</a>
-						</li>
-						<li>
-							<a href="#login" rel="page-scroll" title="Login Sebagai ...">Login</a>
-						</li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#download">Download</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="https://paypal.me/DhimasGaming" target="_blank">Donate</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-		<!-- End Navigation -->
 
-		<!-- Cover -->
-		<div class="container text-center mt-2">
-			<div class="card text-white bg-dark mb-3">
-				<div class="card-body">
-					<div class="col-lg-7 col-sm-7 col-xs-12 box-title">
-						<h1>Selamat<span class="color-title">Datang</span></h1>
-						<h2>PILKASIS Online SMKN 1 UDANAWU</h2>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<!-- End Cover -->
+      <div class="container text-center mt-2">
+        <div class="card text-white bg-dark mb-3">
+          <div class="card-body">
+            <h1 class="display-6">Selamat <span class="color-title">Datang</span>/h1>
+            <p class="lead">PILKASIS SMK N 1 UDANAWU</p>
+            <a class="btn btn-danger" href="/download/" rol="buttom">Login/a>
+          </div>
+        </div>
+      </div>
 
 		<!-- CONTENT -->
-		<div class="row content" id="kandidat">
-			<div class="col-md-12 danger text-center zero-panel">
-				<div class="col-md-8 zero-panel-content">
-				<div class="card-body">
+	<div class="row content" id="kandidat">
+      <div class="container text-center mt-2">
+        <div class="card text-white bg-dark mb-3">
+          <div class="card-body">
 					<h1 id="title-about"> KANDIDAT OSIS </h1>
 <?php
 include_once "sambungan.php";
