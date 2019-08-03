@@ -57,11 +57,13 @@
 		<!-- End Navigation -->
 
 		<!-- Cover -->
-		<div class="cover">
-			<div class="cover-overlay">
-				<div class="col-lg-7 col-sm-7 col-xs-12 box-title">
-					<h1>Pilkasis<span class="color-title"> SMA Pro</span></h1>
-					<h2>Pemilihan Ketua OSIS SMA Islam An-Nizhomiyah (SMA PRO)</h2>
+		<div class="container text-center mt-2">
+			<div class="card text-white bg-dark mb-3">
+				<div class="card-body">
+					<div class="col-lg-7 col-sm-7 col-xs-12 box-title">
+						<h1>Selamat<span class="color-title">Datang</span></h1>
+						<h2>PILKASIS Online SMKN 1 UDANAWU</h2>
+					</div>
 				</div>
 			</div>
 		</div>		
@@ -71,6 +73,7 @@
 		<div class="row content" id="kandidat">
 			<div class="col-md-12 danger text-center zero-panel">
 				<div class="col-md-8 zero-panel-content">
+				<div class="card-body">
 					<h1 id="title-about"> KANDIDAT OSIS </h1>
 <?php
 include_once "sambungan.php";
@@ -100,6 +103,7 @@ while($r=mysqli_fetch_array($query)){
 				</div>
 			</div>
 		</div>
+	</div>
 
 		<!-- GALLERY -->
 		<div class="row content" id="galeri">
@@ -175,103 +179,12 @@ while($r=mysqli_fetch_array($query)){
 			</div>
 		</div>
 		<!-- END GALLERY -->
-
-		<!-- TEAM -->
-		<div class="row content" id="osis">
-			<div class="col-md-12 primary zero-panel text-center">
-				<div class="col-md-12 zero-panel-content">
-					<h1>PERSONIL OSIS</h1>
-					<p>Inilah personil OSIS periode 2016-2017</p>
-					<div class="col-md-3 col-sm-6">
-						<div class="gallery-author">
-							<img src="gambar/ainul.jpg" class="img-responsive" alt>
-							<div class="caption danger">
-								<div class="caption-content">
-									<span>Muhammad Ainul Yaqin</span>
-									<br>
-									<small>Ketua OSIS</small>
-								</div>
-
-							</div>
-							<div class="author-toolbar danger">
-								<i class="fa fa-facebook icon-border"></i>
-								<i class="fa fa-twitter icon-border"></i>
-								<i class="fa fa-google-plus icon-border"></i>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="gallery-author">
-							<img src="gambar/yoga.jpg" class="img-responsive" alt>
-							<div class="caption danger">
-								<div class="caption-content">
-									<span>Yoga Pratama</span>
-									<br>
-									<small>Wakil Ketua 1</small>
-								</div>
-							</div>
-							<div class="author-toolbar danger">
-								<i class="fa fa-facebook icon-border"></i>
-								<i class="fa fa-twitter icon-border"></i>
-								<i class="fa fa-google-plus icon-border"></i>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="gallery-author">
-							<img src="gambar/anisa.jpg" class="img-responsive" alt>
-							<div class="caption danger">
-								<div class="caption-content">
-									<span>Annisa Mutiara</span>
-									<br>
-									<small>Sekretaris</small>
-								</div>
-
-							</div>
-							<div class="author-toolbar danger">
-								<i class="fa fa-facebook icon-border"></i>
-								<i class="fa fa-twitter icon-border"></i>
-								<i class="fa fa-google-plus icon-border"></i>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="gallery-author">
-							<img src="gambar/aulia.jpg" class="img-responsive" alt>
-							<div class="caption danger">
-								<div class="caption-content">
-									<span>Aulia Agmasita</span>
-									<br>
-									<small>Bendahara</small>
-								</div>
-
-							</div>
-							<div class="author-toolbar danger">
-								<i class="fa fa-facebook icon-border"></i>
-								<i class="fa fa-twitter icon-border"></i>
-								<i class="fa fa-google-plus icon-border"></i>
-							</div>
-						</div>
-					</div>
-
-					<div class="clear"></div>
-
-					<div class="col-md-8 zero-panel-content">
-						<div class="quote">
-							Silahkan sampaikan masukan anda untuk perbaikan program PILKASIS kedepannya
-						</div>
-						<a href="#contact" rel="page-scroll" class="btn btn-lg btn-outline color-white">MASUKAN</a>
-					</div>
-					<br>
-				</div>
-			</div>
-		</div>
-		<!-- END TEAM -->
 		
 		<!-- LOGIN -->
 		<div class="row content" id="login">
 			<div class="col-lg-12 danger text-center zero-panel">
 				<div class="col-lg-12 zero-panel-content">
+				<div class="card-body">
 					<h1> LOGIN sebagai .... </h1>
 					<p>Silahkan login untuk memberikan suara. Login sebagai ...</p>
 				</div>
@@ -298,53 +211,10 @@ while($r=mysqli_fetch_array($query)){
 						</div></a>
 					</li>
 				</ul>
-			</div>
-		</div>
-		<!-- END LOGIN -->
-
-		<!-- CONTACT -->
-		<div class="row content" id="contact">
-			<div class="col-md-12 danger text-center zero-panel">
-				<div class="col-md-12 zero-panel-content">
-					<h1> HUBUNGI KAMI </h1>
-					<p>Gd. SMA Pro Lt.2 Jl. Madrasah No.14 - RT.02/05 Kel. Kalibaru Kec. Cilodong Depok - Jawa Barat 16414</p>
-					<div class="col-md-6 text-left">
-						<form id="box-contact" action="kontak.php" method="post">
-							<div class="form-group">
-								<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap">
-							</div>
-							<div class="form-group">
-								<input type="email" name="surel" class="form-control" placeholder="Email/Surel">
-							</div>
-							<div class="form-group">
-								<input type="text" name="web" class="form-control" placeholder="Web/Blog">
-							</div>
-							<div class="form-group">
-								<input type="text" name="judul" class="form-control" placeholder="Judul">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" name="pesan" placeholder="Isi Pesan" rows=9></textarea>
-							</div>
-							<div class="form-group">
-								<center>
-									<input type="submit" value="KIRIM" class="btn btn-lg btn-outline btn-full">
-								</center>
-							</div>
-						</form>
-					</div>
-
-					<!-- MAP CONTACT -->
-					<div class="col-md-6 text-left">
-						<br>
-						<div class="col-md-12 default" style="min-height: 450px;" id="box-map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.726334017979!2d106.82954581410527!3d-6.429192964659142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ea31b266ecdb%3A0xb8ea3a9489bb9c21!2sSekolah+Menengah+Atas+Pro+An-Nizhomiyah!5e0!3m2!1sid!2sid!4v1497339087151" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
-		<!-- END CONTACT -->
+		<!-- END LOGIN -->
 		<!-- END CONTENT -->
 
 		<footer class="primary text-center">
@@ -352,20 +222,14 @@ while($r=mysqli_fetch_array($query)){
 				<div class="col-md-4">
 					<h3>PILKASIS</h3>
 					<p>
-						Proyek Siswa © 2017-<?php echo date('Y'); ?> <a href="http://muhidin.web.id" target="_blank">SkillPro Programming</a> Version 1.1.1. Kelas X dan XI. Tema Asli <a href="http://tangituru.com" target="_blank">CREATIVEFULL</a>.
+						Dhimas X TKJ 1 © 2019
 					</p>
 				</div>
 				<div class="col-md-4">
 					<h3>TEMUKAN KAMI</h3>
-						<a href="http://fb.com/muhidins" target="_blank" class="btn btn-xs btn-outline"><i class="fa fa-facebook fa-2x"></i></a>
+						<a href="http://github.com/KryPtoN" target="_blank" class="btn btn-xs btn-outline"><i class="fab fa-github fa-2x"></i></a>
 						<a href="http://google.com/muhidins" target="_blank" class="btn btn-xs btn-outline"><i class="fa fa-google-plus fa-2x"></i></a>
 						<a href="http://twitter.com/muhidins" target="_blank" class="btn btn-xs btn-outline"><i class="fa fa-twitter fa-2x"></i></a>
-				</div>
-				<div class="col-md-4">
-					<h3>LOKASI</h3>
-					<p>
-						Jl. Madrasah No. 14 - RT.02/05 Kel. Kalibaru Kec. Cilodong Depok - Jawa Barat 16414
-					</p>
 				</div>
 			</div>
 		</footer>
