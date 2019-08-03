@@ -17,7 +17,7 @@
             <a class="navbar-brand text-hide" href="/">Pilkasis
 			  <img src="/asset/img/icon.png" class="rounded-circle d-block" width="36" height="36" viewBox="0 0 612 612" facusable="false">
             </a>
-            <a class="navbar-brand" href="/">KryPtoN Project</a>
+            <a class="navbar-brand" href="/">Pilkasis SMEKSADA/a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
