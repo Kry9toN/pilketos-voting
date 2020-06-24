@@ -13,18 +13,7 @@
   </head>
   <body>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-wrapper blue lighten-1">
-      <a href="#" class="brand-logo">Pilketos Online</a>
-        <img src="/assets/img/icon.png" width="100" height="56" viewBox="0 0 612 612" facusable="false">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
+<?php include "assets/includes/navbar.php"; ?>
 
     <div class="parallax-container">
       <div class="parallax"><img src="/assets/img/gerbang.png"></div>
@@ -34,15 +23,15 @@
         <h4 class="header">Pilketos Online | SMKN 1 UDANAWU</h4>
         <p class="grey-text text-darken-3 lighten-3">Untuk memulai memilih silakan login terlebih dahulu di bawah ini.</p>
   <!-- Dropdown Trigger -->
-  <a class='dropdown-trigger btn blue lighten-1' href='#' data-target='dropdown1'>Login</a>
+  <button class='dropdown-trigger btn waves-effect waves-light blue lighten-1 pulse' data-target='dropdown1'>Login</butoon>
+      </div>
+    </div>
 
   <!-- Dropdown Structure -->
   <ul id='dropdown1' class='dropdown-content blue-text text-lighten-1'>
     <li><a href="/siswa" class="blue-text text-lighten-1">Sebagai Siswa</a></li>
     <li><a href="/kandidat" class="blue-text text-lighten-1">Sebagai Kandidat</a></li>
   </ul>
-      </div>
-    </div>
 
       <div class="container">
 		<h1 id="title-about"> KANDIDAT OSIS </h1>
