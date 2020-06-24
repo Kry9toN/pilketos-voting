@@ -22,19 +22,20 @@ if(isset($_POST['simpan'])){
 		$pengguna=$nama;
 	}
 	if(empty($lokasi)){
-		$sql="INSERT INTO kandidat SET idkandidat='', username='$kandidat', password='$sandi', nama='$nama', nokandidat='$nokandidat', visi='$visi', misi='$misi', aktif='$aktif'";
+		$sql="INSERT INTO kandidat SET username='$kandidat', password='$sandi', nama='$nama', nokandidat='$nokandidat', visi='$visi', misi='$misi', aktif='$aktif', foto=''";
 	}else{
 		$folder="../gambar/kandidat/";
 		$ukuran=100;
 		UploadFoto($namafile,$folder,$ukuran);
-		
-		$sql="INSERT INTO kandidat SET idkandidat='', username='$kandidat', password='$sandi', nama='$nama', nokandidat='$nokandidat', visi='$visi', misi='$misi', aktif='$aktif', foto='$namafile'";
+
+		$sql="INSERT INTO kandidat SET username='$kandidat', password='$sandi', nama='$nama', nokandidat='$nokandidat', visi='$visi', misi='$misi', aktif='$aktif', foto='$namafile'";
 	}
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=kandidat&s=awal');
 		//echo "berhasil";
 	}else{
+                var_dump($sql);
 		include "index.php?m=kandidat&s=awal";
 		echo '<script language="JavaScript">';
 			echo 'alert("Data Gagal Ditambahkan.")';

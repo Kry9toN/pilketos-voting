@@ -44,6 +44,11 @@
 						<td>Nama Lengkap*</td>
 						<td><input type="text" name="nama" placeholder="Nama" size="50px" maxlength="50px" required /></td>
 					</tr>
+                                        <tr>
+						<td>Jenis Kelamin</td>
+						<td><input type="radio" name="jk" id="jkl" value="L" checked />Laki-laki &nbsp;&nbsp;
+						<input type="radio" name="jk" id="jkp" value="P"  />Perempuan</td>
+					</tr>
 					<tr>
 						<td>Mengajar</td>
 						<td><input type="text" name="mengajar" placeholder="Mengajar" size="25px" maxlength="30px" /></td>

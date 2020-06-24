@@ -31,10 +31,12 @@
   <ul id='dropdown1' class='dropdown-content blue-text text-lighten-1'>
     <li><a href="/siswa" class="blue-text text-lighten-1">Sebagai Siswa</a></li>
     <li><a href="/kandidat" class="blue-text text-lighten-1">Sebagai Kandidat</a></li>
+    <li><a href="/guru" class="blue-text text-lighten-1">Sebagai Guru</a></li>
+    <li><a href="/admin" class="blue-text text-lighten-1">Sebagai Admin</a></li>
   </ul>
 
       <div class="container">
-		<h1 id="title-about"> KANDIDAT OSIS </h1>
+		<h3 id="title-about"> KANDIDAT OSIS </h3>
 <?php
 include_once "sambungan.php";
 $sqljs="SELECT sum(jumlahsuara) as jsuara FROM kandidat";

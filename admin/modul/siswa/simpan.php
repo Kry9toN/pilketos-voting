@@ -25,19 +25,20 @@ if(isset($_POST['simpan'])){
 		$pengguna=$nis;
 	}
 	if(empty($lokasi)){
-		$sql="INSERT INTO siswa SET nis='$nis', username='$pengguna', password='$sandi', nama='$nama', jk='$jk',hp='$hp',email='$surel', tempatlahir='$tempatl', tanggallahir='$tanggall', aktif='$aktif', idkelas='$idkelas'";
+		$sql="INSERT INTO siswa SET nis='$nis', username='$pengguna', password='$sandi', nama='$nama', jk='$jk',hp='$hp',email='$surel', tempatlahir='$tempatl', tanggallahir='$tanggall', aktif='$aktif', idkelas='$idkelas', foto='', memilih=''";
 	}else{
 		$folder="../gambar/siswa/";
 		$ukuran=100;
 		UploadFoto($namafile,$folder,$ukuran);
-		
-		$sql="INSERT INTO siswa SET nis='$nis', username='$pengguna', password='$sandi', nama='$nama', jk='$jk',hp='$hp',email='$surel', tempatlahir='$tempatl', tanggallahir='$tanggall', aktif='$aktif', idkelas='$idkelas', foto='$namafile'";
+
+		$sql="INSERT INTO siswa SET nis='$nis', username='$pengguna', password='$sandi', nama='$nama', jk='$jk',hp='$hp',email='$surel', tempatlahir='$tempatl', tanggallahir='$tanggall', aktif='$aktif', idkelas='$idkelas', foto='$namafile', memilih=''";
 	}
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=siswa&s=awal');
 		//echo "berhasil";
 	}else{
+                var_dump($sql);
 		include "index.php?m=siswa&s=awal";
 		echo '<script language="JavaScript">';
 			echo 'alert("Data Gagal Ditambahkan.")';

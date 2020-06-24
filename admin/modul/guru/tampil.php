@@ -32,6 +32,7 @@
                   <th>Username</th>
                   <th>NIP</th>
                   <th>Nama</th>
+                  <th>JK</th>
                   <th>Mengajar</th>
                   <th>HP</th>
                   <th>Email</th>
@@ -40,7 +41,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                
+
 <?php
 include "../sambungan.php";
 $sql="SELECT * FROM guru ORDER BY nip";
@@ -55,6 +56,7 @@ if(mysqli_num_rows($query)==0){
 		echo "<td><a href='?m=guru&s=detail&nip=".$r['nip']."'>".$r['username']."</a></td>";
 		echo "<td>".$r['nip']."</td>";
 		echo "<td>".$r['nama']."</td>";
+                echo "<td>".$r['jk']."</td>";
 		echo "<td>".$r['mengajar']."</td>";
 		echo "<td>".$r['hp']."</td>";
 		echo "<td>".$r['email']."</td>";
@@ -72,6 +74,7 @@ if(mysqli_num_rows($query)==0){
                   <th>Username</th>
                   <th>NIP</th>
                   <th>Nama</th>
+                  <th>JK</th>
                   <th>Mengajar</th>
                   <th>HP</th>
                   <th>Email</th>

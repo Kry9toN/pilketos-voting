@@ -6,6 +6,7 @@ if(isset($_POST['simpan'])){
 	$sandi	=md5($_POST['password']);
 	$nip	=$_POST['nip'];
 	$nama	=$_POST['nama'];
+	$jk		=$_POST['jk'];
 	$mengajar=$_POST['mengajar'];
 	$hp		=$_POST['hp'];
 	$surel	=$_POST['surel'];
@@ -13,7 +14,7 @@ if(isset($_POST['simpan'])){
 	$lokasi =$_FILES['foto']['tmp_name'];
 	$namafile=$_FILES['foto']['name'];
 	$tipefile=$_FILES['foto']['type'];
-	
+
 	if(empty($pengguna) && empty($_POST['password'])){
 		$pengguna=$nip; $sandi=md5($nama);
 	}else if(!empty($pengguna) && empty($_POST['password'])){
@@ -22,20 +23,21 @@ if(isset($_POST['simpan'])){
 		$pengguna=$nip;
 	}
 	if(empty($lokasi)){
-		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif'";
+		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', jk='$jk', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif', foto='', memilih=''";
 	}else{
 		$folder="../gambar/guru/";
 		$ukuran=150;
 		UploadFoto($namafile,$folder,$ukuran);
 		//kecilkangambar($tujuan, 150);
-		
-		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif', foto='$namafile'";
+
+		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', jk='$jk', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif', foto='$namafile', memilih=''";
 	}
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=guru');
 		//echo "berhasil";
 	}else{
+                var_dump($sql);
 		include "?m=guru";
 		echo '<script language="JavaScript">';
 			echo 'alert("Data Gagal Ditambahkan, kemungkinan username sudah digunakan.")';
