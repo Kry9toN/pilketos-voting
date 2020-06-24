@@ -25,7 +25,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="pilkasis1" class="table table-bordered table-hover table-striped">
+              <table id="pilkasis2" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
                   <th>No</th>

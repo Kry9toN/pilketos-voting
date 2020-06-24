@@ -43,6 +43,13 @@
 	<!-- DataTables -->
 	<script src="plugins/datatables/jquery.dataTables.min.js"></script>
 	<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.html5.min.js"></script>
+
 	<!-- page script -->
 	<script>
 	  $(function(){
@@ -53,7 +60,16 @@
 		  "searching": true,
 		  "ordering": true,
 		  "info": true,
-		  "autoWidth": false
+		  "autoWidth": false,
+                  "processing": true,
+                  "serveeSide": true,
+                  dom: 'Bfrtip',
+                  buttons: [
+                       'copyHtml5',
+                       'excelHtml5',
+                       'csvHtml5',
+                       'pdfHtml5'
+                  ]
 		});
 		$('#pilkasis3').DataTable({
 		  "paging": true,
