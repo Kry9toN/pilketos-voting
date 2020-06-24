@@ -3,7 +3,7 @@
   <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="/asset/img/icon.ico">
+    <link rel="icon" href="/assets/img/icon.png">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Icon -->
@@ -16,7 +16,8 @@
   <!-- Navbar -->
   <nav>
     <div class="nav-wrapper blue lighten-1">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="#" class="brand-logo">Pilketos Online</a>
+        <img src="/assets/img/icon.png" width="100" height="56" viewBox="0 0 612 612" facusable="false">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
@@ -26,7 +27,7 @@
   </nav>
 
     <div class="parallax-container">
-      <div class="parallax"><img src="/gambar/galeri2.jpg"></div>
+      <div class="parallax"><img src="/assets/img/gerbang.png"></div>
     </div>
     <div class="section white">
       <div class="row container">
