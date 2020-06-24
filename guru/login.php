@@ -2,9 +2,9 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Login Guru Pilkasis | SMA Pro An-Nizhomiyah</title>
+  <title>Login Guru Pilketos | SMKN 1 UDANAWU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link rel="shortcut icon" href="../gambar/logo.png">
+  <link rel="shortcut icon" href="/asstest/img/icon.ico">
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans'>
 
       <link rel="stylesheet" href="css/style.css">
@@ -33,7 +33,7 @@
         </div>
         <input type="submit" name="simpan" value="Login" class="login__submit"/>
         <!--<button type="button" class="login__submit">Sign in</button>-->
-        <p class="login__signup">Kembali ke Web &nbsp;<a href="../">Pilkasis</a></p>
+        <p class="login__signup">Kembali ke Web &nbsp;<a href="../">Pilketos</a></p>
       </form>
       </div>
     </div>

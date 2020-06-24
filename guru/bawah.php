@@ -4,7 +4,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 1.0.0
         </div>
-        <strong>Proyek Siswa &copy; 2017 <a href="http://muhidin.web.id" target="_blank">SkillPro Programming</a>.</strong> Kelas X dan XI.
+        <strong>KryPtoN  &copy; 2020 <a href="https:/github.com/kry9ton" target="_blank">Github</a>.</strong> Kelas XII TKJ 1.
       </footer>
     </div><!-- ./wrapper - adanya di atas.php -->
 

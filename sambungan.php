@@ -1,8 +1,8 @@
 <?php
 //error_reporting(1);
 $host="localhost";
-$userdb="root";
-$passdb="";
-$namadb="pilkasis";
-$koneksi=mysqli_connect($host,$userdb,$passdb,$namadb);
+$userdb="pilketos";
+$passdb="Pilketos@1234";
+$namadb="pilketosdb";
+$koneksi=mysqli_connect($host, $userdb, $passdb, $namadb);
 ?>

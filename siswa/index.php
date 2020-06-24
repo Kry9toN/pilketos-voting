@@ -2,7 +2,7 @@
 session_start();
 include_once "sesi.php";
 $modul=(isset($_GET['m']))?$_GET['m']:"awal";
-$jawal="Admin Pilkasis | SMA Pro An-Nizhomiyah";
+$jawal="Admin Pilketos | SMKN 1 UDANAWU";
 switch($modul){
 	case 'awal': default: $aktif="Beranda"; $judul="Beranda $jawal"; include "awal.php"; break;
 	case 'siswa': $aktif="Siswa"; $judul="Modul Siswa $jawal"; include "modul/siswa/index.php"; break;

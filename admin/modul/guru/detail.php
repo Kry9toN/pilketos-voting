@@ -5,7 +5,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Administrator Pilkasis
+        Administrator Pilketos
         <small>Pemilihan Ketua OSIS</small>
       </h1>
       <ol class="breadcrumb">
