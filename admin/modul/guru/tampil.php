@@ -20,8 +20,9 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-			  <a href="?m=guru&s=tambah" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Tambah Guru</a>
-              <h3 class="box-title">Daftar Guru</h3>
+              <h3 class="box-title col-xs-12 text-center">Daftar Guru</h3>
+              <a href="?m=guru&s=tambah" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Tambah Guru</a>
+              <a href="?m=guru&s=import" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-plus"></i> &nbsp; Import Guru .xlsx</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

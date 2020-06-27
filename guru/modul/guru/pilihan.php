@@ -9,7 +9,7 @@ include "sesi.php";
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php');
-		$edit="UPDATE kandidat SET jumlahsuara=jumlahsuara+2 WHERE idkandidat='$kandidat'";
+		$edit="UPDATE kandidat SET jumlahsuara=jumlahsuara+1 WHERE idkandidat='$kandidat'";
 		$update=mysqli_query($koneksi,$edit);
 		//echo "berhasil";
 	}else{

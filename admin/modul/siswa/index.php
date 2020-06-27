@@ -11,5 +11,6 @@ switch($modul){
 	case 'hapus': include "modul/siswa/hapus.php"; break;
 	case 'detail': include "modul/siswa/detail.php"; break;
 	case 'profil': include "modul/siswa/profil.php"; break;
+        case 'import': include "modul/siswa/import.php"; break;
 }
 ?>

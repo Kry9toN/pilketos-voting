@@ -46,7 +46,7 @@ if(mysqli_num_rows($query)==0){
          ';       
 	echo "<td colspan='6'>Data Masih Kosong</td>";
 }else{
-    echo'          <table id="pilkasis1" class="table table-bordered table-hover table-striped">
+    echo'          <table id="pilkasis2" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
                   <th>No</th>
