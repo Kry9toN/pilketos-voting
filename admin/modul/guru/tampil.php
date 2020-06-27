@@ -29,14 +29,8 @@
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>Username</th>
                   <th>NIP</th>
                   <th>Nama</th>
-                  <th>JK</th>
-                  <th>Mengajar</th>
-                  <th>HP</th>
-                  <th>Email</th>
-                  <th>Aktif</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -53,14 +47,8 @@ if(mysqli_num_rows($query)==0){
 	while($r=mysqli_fetch_assoc($query)){
 	  echo "<tr>";
 		echo "<td>$no</td>";
-		echo "<td><a href='?m=guru&s=detail&nip=".$r['nip']."'>".$r['username']."</a></td>";
-		echo "<td>".$r['nip']."</td>";
+		echo "<td><a href='?m=guru&s=detail&nip=".$r['nip']."'>".$r['nip']."</a></td>";
 		echo "<td>".$r['nama']."</td>";
-                echo "<td>".$r['jk']."</td>";
-		echo "<td>".$r['mengajar']."</td>";
-		echo "<td>".$r['hp']."</td>";
-		echo "<td>".$r['email']."</td>";
-		echo "<td>".$r['aktif']."</td>";
 		echo '<td><a href="index.php?m=guru&s=edit&nip='.$r['nip'].'"><i class="fa fa-edit"></i></a> | <a href="index.php?m=guru&s=hapus&nip='.$r['nip'].'" onclick="return confirm(\'Yakin Akan dihapus?\')"><i class="fa fa-remove"></i></a></td>';
 	  echo "</tr>";
 		$no++;
@@ -71,14 +59,8 @@ if(mysqli_num_rows($query)==0){
                 <tfoot>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>Username</th>
                   <th>NIP</th>
                   <th>Nama</th>
-                  <th>JK</th>
-                  <th>Mengajar</th>
-                  <th>HP</th>
-                  <th>Email</th>
-                  <th>Aktif</th>
                   <th>Opsi</th>
                 </tr>
                 </tfoot>

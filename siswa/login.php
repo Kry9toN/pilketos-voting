@@ -16,8 +16,56 @@
 
 <div class="row" style="margin:50px;">
   <h4 class="center">Siswa login page</h4>
-<?php include "../assets/includes/login.php"; ?>
+   <div class="divider"></div>
+    <form class="col s12" method="post" action="logincek.php">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="number" class="validate" placeholder="NIS" name="nis" required="required">
+          <label for="icon_prefix">NIS</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">lock_outline</i>
+          <input id="icon_telephone" type="password" class="validate" placeholder="Nama Lengkap/Password" name="password" required="required">
+          <label for="icon_telephone">Nama Lengkap/Password</label>
+        </div>
+        <div class="col s6">
+         <p>
+          <label>
+             <input type="checkbox" onclick="showpw()"/>
+             <span>Tampilkan Password</span>
+          </label>
+         </p>
+        </div>
+        <div class="col s6">
+         <p>
+           <label>
+             <input type="checkbox" name="ingat" />
+             <span>Ingat saya</span>
+           </label>
+         </p>
+         </div>
+         <div class="col s6 offset-s6">
+          <button class="btn waves-effect waves-light right blue lighten-1 pulse" type="submit" name="simpan">Login
+            <i class="material-icons right">send</i>
+          </button>
+         </div>
+          <h6 class="container left" >Kembali ke Web&nbsp;<a href="../">Pilketos</a></h6>
+      </div>
+    </form>
 </div>
+
+<!-- Fungsi Show Password -->
+<script>
+function showpw() {
+  var x = document.getElementById("icon_telephone");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 
 <?php include "../assets/includes/footer.php"; ?>
 

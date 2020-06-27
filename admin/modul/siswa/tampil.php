@@ -35,14 +35,9 @@ if(mysqli_num_rows($query)==0){
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>Username</th>
                   <th>NIS</th>
                   <th>Nama</th>
-                  <th>JK</th>
                   <th>Kelas</th>
-                  <th>Email</th>
-                  <th>HP</th>
-                  <th>Aktif</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -53,14 +48,9 @@ if(mysqli_num_rows($query)==0){
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>Username</th>
                   <th>NIS</th>
                   <th>Nama</th>
-                  <th>JK</th>
                   <th>Kelas</th>
-                  <th>Email</th>
-                  <th>HP</th>
-                  <th>Aktif</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -69,14 +59,9 @@ if(mysqli_num_rows($query)==0){
 	while($r=mysqli_fetch_assoc($query)){
 	  echo "<tr>";
 		echo "<td>$no</td>";
-		echo "<td><a href='?m=siswa&s=detail&nis=".$r['nis']."'>".$r['username']."</a></td>";
-		echo "<td>".$r['nis']."</td>";
+		echo "<td><a href='?m=siswa&s=detail&nis=".$r['nis']."'>".$r['nis']."</a></td>";
 		echo "<td>".$r['nama']."</td>";
-		echo "<td>".$r['jk']."</td>";
 		echo "<td>".$r['kelas']."</td>";
-		echo "<td>".$r['email']."</td>";
-		echo "<td>".$r['hp']."</td>";
-		echo "<td>".$r['aktif']."</td>";
 		echo '<td><a href="index.php?m=siswa&s=edit&nis='.$r['nis'].'"><i class="fa fa-edit"></i></a> | <a href="index.php?m=siswa&s=hapus&nis='.$r['nis'].'" onclick="return confirm(\'Yakin Akan dihapus?\')"><i class="fa fa-remove"></i></a></td>';
 	  echo "</tr>";
 		$no++;
@@ -87,14 +72,9 @@ if(mysqli_num_rows($query)==0){
                 <tfoot>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>Username</th>
                   <th>NIS</th>
                   <th>Nama</th>
-                  <th>JK</th>
                   <th>Kelas</th>
-                  <th>Email</th>
-                  <th>HP</th>
-                  <th>Aktif</th>
                   <th>Opsi</th>
                 </tr>
                 </tfoot>

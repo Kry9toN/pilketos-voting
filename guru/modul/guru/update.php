@@ -2,39 +2,10 @@
 if(isset($_POST['simpan'])){
 	include_once "../sambungan.php";
 	$id=$_POST['nip'];
-	$pengguna=$_POST['username'];
-	$sandi	=md5($_POST['password']);
+	$sandi	=md5($_POST['nama']);
 	$nama	=$_POST['nama'];
-	$jk		=$_POST['jk'];
-	$hp		=$_POST['hp'];
-	$surel	=$_POST['surel'];
-	$mengajar=$_POST['mengajar'];
-	$aktif=$_POST['aktif'];
-	$lokasi =$_FILES['foto']['tmp_name'];
-	$namafile=$_FILES['foto']['name'];
-	$tipefile=$_FILES['foto']['type'];
-	
-	if(empty($_POST['password'])){
-		if(empty($lokasi)){
-			$sql="UPDATE guru SET username='$pengguna', nama='$nama', jk='$jk', hp='$hp', email='$surel', mengajar='$mengajar', aktif='$aktif' WHERE nip='$id'";
-		}else{
-			include "../fungsi/upload.php";
-			$folder="../gambar/guru/";
-			$ukuran=100;
-			UploadFoto($namafile,$folder,$ukuran);
-			$sql="UPDATE guru SET username='$pengguna', nama='$nama', jk='$jk', hp='$hp', email='$surel', mengajar='$mengajar', aktif='$aktif', foto='$namafile' WHERE nip='$id'";
-		}
-	}else{
-		if(empty($lokasi)){
-			$sql="UPDATE guru SET username='$pengguna', nama='$nama', jk='$jk', hp='$hp', email='$surel', mengajar='$mengajar', password='$sandi', aktif='$aktif' WHERE nip='$id'";
-		}else{
-			include "../fungsi/upload.php";
-			$folder="../gambar/pengguna/";
-			$ukuran=100;
-			UploadFoto($namafile,$folder,$ukuran);
-			$sql="UPDATE guru SET username='$pengguna', nama='$nama', jk='$jk', hp='$hp', email='$surel', mengajar='$mengajar', password='$sandi', aktif='$aktif', foto='$namafile' WHERE nip='$id'";
-		}
-	}
+
+	$sql="UPDATE guru SET nama='$nama', password='$sandi' WHERE nip='$id'";
 	$simpan=mysqli_query($koneksi,$sql);
 	//var_dump($sql);
 	if($simpan){

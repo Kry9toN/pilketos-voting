@@ -2,36 +2,11 @@
 if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
-	$pengguna=$_POST['username'];
-	$sandi	=md5($_POST['password']);
+	$sandi	=md5($_POST['nama']);
 	$nip	=$_POST['nip'];
 	$nama	=$_POST['nama'];
-	$jk		=$_POST['jk'];
-	$mengajar=$_POST['mengajar'];
-	$hp		=$_POST['hp'];
-	$surel	=$_POST['surel'];
-	$aktif	=$_POST['aktif'];
-	$lokasi =$_FILES['foto']['tmp_name'];
-	$namafile=$_FILES['foto']['name'];
-	$tipefile=$_FILES['foto']['type'];
 
-	if(empty($pengguna) && empty($_POST['password'])){
-		$pengguna=$nip; $sandi=md5($nama);
-	}else if(!empty($pengguna) && empty($_POST['password'])){
-		$sandi=md5($nama);
-	}else if(empty($pengguna) && !empty($_POST['password'])){
-		$pengguna=$nip;
-	}
-	if(empty($lokasi)){
-		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', jk='$jk', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif', foto='', memilih=''";
-	}else{
-		$folder="../gambar/guru/";
-		$ukuran=150;
-		UploadFoto($namafile,$folder,$ukuran);
-		//kecilkangambar($tujuan, 150);
-
-		$sql="INSERT INTO guru SET nip='$nip', username='$pengguna', password='$sandi', nama='$nama', jk='$jk', mengajar='$mengajar',hp='$hp',email='$surel', aktif='$aktif', foto='$namafile', memilih=''";
-	}
+	$sql="INSERT INTO guru SET nip='$nip', nama='$nama', password='$sandi', memilih=''";
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=guru');

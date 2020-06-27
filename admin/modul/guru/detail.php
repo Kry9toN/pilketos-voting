@@ -34,40 +34,12 @@ $r=mysqli_fetch_assoc($query);
               <table id="pilkasis1" class="table table-bordered table-hover table-striped">
                 <tbody>
 					<tr>
-						<td width=150>Nama Pengguna</td>
-						<td><?php echo$r['username'];?></td>
+						<td width=150>Nomor Induk Pegawai</td>
+						<td><?php echo$r['nip'];?></td>
 					</tr>
 					<tr>
 						<td>Nama Lengkap</td>
 						<td><?php echo$r['nama'];?></td>
-					</tr>
-					<tr>
-						<td>No Induk Guru</td>
-						<td><?php echo$r['nip'];?></td>
-					</tr>
-					<tr>
-						<td>Mengajar</td>
-						<td><?php echo$r['mengajar'];?></td>
-					</tr>
-					<tr>
-						<td>Handphone</td>
-						<td><?php echo$r['hp'];?></td>
-					</tr>
-					<tr>
-						<td>Surat Elektronik</td>
-						<td><?php echo$r['email'];?></td>
-					</tr>
-					<tr>
-						<td>Foto</td>
-						<td>
-<?php 
-						if ($r['foto']!=''){
-						  echo "<img src=\"../gambar/guru/$r[foto]\" width=150 />";  
-						}
-						else{
-						  echo "<img src=\"../gambar/guru/0.jpg\">";
-						}
-?>
 					</tr>
 					<tr>
 						<td colspan=2>

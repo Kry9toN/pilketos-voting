@@ -13,13 +13,21 @@
         </div>
         <div class="col s6">
          <p>
+          <label>
+             <input type="checkbox" onclick="showpw()"/>
+             <span>Tampilkan Password</span>
+          </label>
+         </p>
+        </div>
+        <div class="col s6">
+         <p>
            <label>
              <input type="checkbox" name="ingat" />
              <span>Ingat saya</span>
            </label>
          </p>
          </div>
-         <div class="col s6">
+         <div class="col s6 offset-s6">
           <button class="btn waves-effect waves-light right blue lighten-1 pulse" type="submit" name="simpan">Login
             <i class="material-icons right">send</i>
           </button>
@@ -27,3 +35,15 @@
           <h6 class="container left" >Kembali ke Web&nbsp;<a href="../">Pilketos</a></h6>
       </div>
     </form>
+
+<!-- Fungsi Show Password -->
+<script>
+function showpw() {
+  var x = document.getElementById("icon_telephone");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
