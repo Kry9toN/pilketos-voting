@@ -20,8 +20,9 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-			  <a href="?m=siswa&s=tambah" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Tambah Siswa</a>
-              <h3 class="box-title">Daftar Siswa</h3>
+              <h3 class="box-title col-xs-12 text-center">Daftar Siswa</h3>
+	      <a href="?m=siswa&s=tambah" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Tambah Siswa</a>
+              <a href="?m=siswa&s=import" class="btn btn-large btn-danger"><i class="glyphicon glyphicon-plus"></i> &nbsp; Import Siswa .xlsx</a>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -44,7 +45,7 @@ if(mysqli_num_rows($query)==0){
                 <tbody>';
 	echo "<td colspan='9'>Data Masih Kosong</td>";
 }else{
-	echo '              <table id="pilkasis1" class="table table-bordered table-hover table-striped">
+	echo '              <table id="pilkasis2" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
