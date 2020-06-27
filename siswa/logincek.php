@@ -1,9 +1,9 @@
 <?php
 include_once "../sambungan.php";
 
-$nis = $_POST['nis'];
+$nama = $_POST['nama'];
 $pass = md5($_POST['password']);
-$sql = "SELECT * FROM siswa WHERE nis='$nis' AND password='$pass'";
+$sql = "SELECT * FROM siswa WHERE nama='$nama' AND password='$pass'";
 $login=mysqli_query($koneksi,$sql);
 $ketemu=mysqli_num_rows($login);
 $b=mysqli_fetch_array($login);

@@ -5,9 +5,9 @@ if(isset($_POST['simpan'])){
 	$nama	=$_POST['nama'];
 	$nis	=$_POST['nis'];
 	$idkelas=$_POST['idkelas'];
-        $pass=md5($_POST['nama']);
+        $pass=md5($_POST['nis']);
 
-	$sql="INSERT INTO siswa SET nis='$nis', nama='$nama', password='$pass', idkelas='$idkelas', memilih=''";
+	$sql="INSERT INTO siswa SET nis='$nis', nama='$nama', password='$pass', idkelas='$idkelas'";
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=siswa&s=awal');
@@ -36,13 +36,13 @@ require '../assets/phpspreadsheet/vendor/autoload.php';
 
     $spreadsheet = $reader->load($_FILES['file']['tmp_name']);
     $sheetData = $spreadsheet->getActiveSheet()->toArray();
-        $sql = "INSERT INTO siswa (nis,nama,password,idkelas,memilih) VALUES";
+        $sql = "INSERT INTO siswa (nis,nama,password,idkelas) VALUES";
 	for($i = 1;$i < count($sheetData);$i++) {
         $nis = $sheetData[$i]['1'];
         $nama = $sheetData[$i]['2'];
-        $pass = md5($sheetData[$i]['2']);
+        $pass = md5($sheetData[$i]['1']);
         $kelas = $sheetData[$i]['3'];
-        $sql .= " ('$nis','$nama','$pass','$kelas',''),";
+        $sql .= " ('$nis','$nama','$pass','$kelas'),";
         }
         $sql = substr($sql, 0, -1);
         $import = mysqli_query($koneksi,$sql);

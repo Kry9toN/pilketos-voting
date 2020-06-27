@@ -2,7 +2,7 @@
 if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	$id=$_POST['nip'];
-	$sandi	=md5($_POST['nama']);
+	$sandi	=md5($_POST['nip']);
 	$nama	=$_POST['nama'];
 
 	$sql="UPDATE guru SET nama='$nama', password='$sandi' WHERE nip='$id'";

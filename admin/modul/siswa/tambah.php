@@ -29,7 +29,7 @@
               <table id="pilkasis1" class="table table-bordered table-hover table-striped">
                 <tbody>
 					<tr>
-						<td width=174>NIS*</td>
+						<td width=174>No Induk Siswa*</td>
 						<td><input type="number" name="nis" placeholder="Nomor Induk" size="10px" maxlength="9px" required /><small> maksimal 9 karakter</small></td>
 					</tr>
 					<tr>

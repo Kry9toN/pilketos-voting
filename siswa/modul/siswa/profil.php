@@ -45,10 +45,6 @@ $r=mysqli_fetch_assoc($query);
 						<td>Kelas</td>
 						<td><?php echo$_SESSION['kelasskasis'];?></td>
 					</tr>
-					<tr>
-						<td colspan=2>
-						<a href="?m=siswa&s=edit&nis=<?php echo$id;?>" class="btn btn-large btn-primary"><i class="fa fa-times"></i> Edit</a>
-					</tr>
                 </tbody>
               </table>
 			 </form>

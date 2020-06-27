@@ -41,10 +41,6 @@ $r=mysqli_fetch_assoc($query);
 						<td>Nama Lengkap</td>
 						<td><?php echo$r['nama'];?></td>
 					</tr>
-					<tr>
-						<td colspan=2>
-						<a href="?m=guru&s=edit&nip=<?php echo$id;?>" class="btn btn-large btn-primary"><i class="fa fa-times"></i> Edit</a>
-					</tr>
                 </tbody>
               </table>
 			 </form>

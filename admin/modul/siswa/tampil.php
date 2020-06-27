@@ -36,9 +36,10 @@ if(mysqli_num_rows($query)==0){
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>NIS</th>
-                  <th>Nama</th>
+                  <th>Nomer Induk Siswa</th>
+                  <th>Nama Lengkap</th>
                   <th>Kelas</th>
+                  <th>Memilih</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -49,9 +50,10 @@ if(mysqli_num_rows($query)==0){
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>NIS</th>
-                  <th>Nama</th>
+                  <th>No Induk Siswa</th>
+                  <th>Nama Lengkap</th>
                   <th>Kelas</th>
+                  <th>Memilih</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -63,6 +65,7 @@ if(mysqli_num_rows($query)==0){
 		echo "<td><a href='?m=siswa&s=detail&nis=".$r['nis']."'>".$r['nis']."</a></td>";
 		echo "<td>".$r['nama']."</td>";
 		echo "<td>".$r['kelas']."</td>";
+                echo "<td>".$r['memilih']."</td>";
 		echo '<td><a href="index.php?m=siswa&s=edit&nis='.$r['nis'].'"><i class="fa fa-edit"></i></a> | <a href="index.php?m=siswa&s=hapus&nis='.$r['nis'].'" onclick="return confirm(\'Yakin Akan dihapus?\')"><i class="fa fa-remove"></i></a></td>';
 	  echo "</tr>";
 		$no++;
@@ -73,9 +76,10 @@ if(mysqli_num_rows($query)==0){
                 <tfoot>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>NIS</th>
-                  <th>Nama</th>
+                  <th>No Induk Siswa</th>
+                  <th>Nama Lengkap</th>
                   <th>Kelas</th>
+                  <th>Memilih</th>
                   <th>Opsi</th>
                 </tr>
                 </tfoot>

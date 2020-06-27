@@ -21,13 +21,13 @@
       <div class="row">
         <div class="input-field col s12">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="number" class="validate" placeholder="NIS" name="nis" required="required">
-          <label for="icon_prefix">NIS</label>
+          <input id="icon_prefix" type="text" class="validate" placeholder="Nama Lengkap" name="nama" required="required">
+          <label for="icon_prefix">Nama Lengkap</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">lock_outline</i>
-          <input id="icon_telephone" type="password" class="validate" placeholder="Nama Lengkap/Password" name="password" required="required">
-          <label for="icon_telephone">Nama Lengkap/Password</label>
+          <input id="icon_telephone" type="password" class="validate" placeholder="Nomer Induk Siswa" name="password" required="required">
+          <label for="icon_telephone">Nomer Induk siswa</label>
         </div>
         <div class="col s6">
          <p>

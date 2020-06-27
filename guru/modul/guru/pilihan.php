@@ -11,6 +11,9 @@ include "sesi.php";
 		header('Location:index.php');
 		$edit="UPDATE kandidat SET jumlahsuara=jumlahsuara+1 WHERE idkandidat='$kandidat'";
 		$update=mysqli_query($koneksi,$edit);
+                // Cek Golput
+                $cek="UPDATE guru SET memilih='sudah' WHERE nip='$pemilih'";
+                mysqli_query($koneksi,$cek);
 		//echo "berhasil";
 	}else{
 		include "index.php";

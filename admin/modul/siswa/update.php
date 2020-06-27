@@ -4,7 +4,7 @@ if(isset($_POST['simpan'])){
 	$id=$_POST['nis'];
 	$nama	=$_POST['nama'];
 	$idkelas=$_POST['kelas'];
-        $pass=md5($_POST['nama']);
+        $pass=md5($_POST['nis']);
 
 	$sql="UPDATE siswa SET nama='$nama', password='$pass', idkelas='$idkelas' WHERE nis='$id'";
 	$simpan=mysqli_query($koneksi,$sql);

@@ -2,11 +2,11 @@
 if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
-	$sandi	=md5($_POST['nama']);
+	$sandi	=md5($_POST['nip']);
 	$nip	=$_POST['nip'];
 	$nama	=$_POST['nama'];
 
-	$sql="INSERT INTO guru SET nip='$nip', nama='$nama', password='$sandi', memilih=''";
+	$sql="INSERT INTO guru SET nip='$nip', nama='$nama', password='$sandi'";
 	$simpan=mysqli_query($koneksi,$sql);
 	if($simpan){
 		header('Location:index.php?m=guru');
@@ -36,12 +36,12 @@ require '../assets/phpspreadsheet/vendor/autoload.php';
 
     $spreadsheet = $reader->load($_FILES['file']['tmp_name']);
     $sheetData = $spreadsheet->getActiveSheet()->toArray();
-        $sql = "INSERT INTO guru (nip,nama,password,memilih) VALUES";
+        $sql = "INSERT INTO guru (nip,nama,password) VALUES";
         for($i = 1;$i < count($sheetData);$i++) {
         $nip = $sheetData[$i]['1'];
         $nama = $sheetData[$i]['2'];
-        $pass = md5($sheetData[$i]['2']);
-        $sql .= " ('$nip','$nama','$pass',''),";
+        $pass = md5($sheetData[$i]['1']);
+        $sql .= " ('$nip','$nama','$pass'),";
         }
         $sql = substr($sql, 0, -1);
         $import = mysqli_query($koneksi,$sql);

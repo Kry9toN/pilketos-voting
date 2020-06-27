@@ -30,8 +30,9 @@
                 <thead>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>NIP</th>
-                  <th>Nama</th>
+                  <th>No Induk Pegawai</th>
+                  <th>Nama Lengkap</th>
+                  <th>Memilih</th>
                   <th>Opsi</th>
                 </tr>
                 </thead>
@@ -50,6 +51,7 @@ if(mysqli_num_rows($query)==0){
 		echo "<td>$no</td>";
 		echo "<td><a href='?m=guru&s=detail&nip=".$r['nip']."'>".$r['nip']."</a></td>";
 		echo "<td>".$r['nama']."</td>";
+                echo "<td>".$r['memilih']."</td>";
 		echo '<td><a href="index.php?m=guru&s=edit&nip='.$r['nip'].'"><i class="fa fa-edit"></i></a> | <a href="index.php?m=guru&s=hapus&nip='.$r['nip'].'" onclick="return confirm(\'Yakin Akan dihapus?\')"><i class="fa fa-remove"></i></a></td>';
 	  echo "</tr>";
 		$no++;
@@ -60,8 +62,9 @@ if(mysqli_num_rows($query)==0){
                 <tfoot>
                 <tr bgcolor="#ccc">
                   <th>No</th>
-                  <th>NIP</th>
-                  <th>Nama</th>
+                  <th>No Induk Pegawai</th>
+                  <th>Nama Lengkap</th>
+                  <th>Memilih</th>
                   <th>Opsi</th>
                 </tr>
                 </tfoot>
