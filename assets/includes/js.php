@@ -1,6 +1,47 @@
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src"../assets/js/style.js"></script>
+<!-- JS -->
+<script src="https://kry9ton.tech/js/jquery.js"></script>
+<script src="https://kry9ton.tech/js/popper.js"></script>
+<script src="https://kry9ton.tech/js/bootstrap.js"></script>
+<script src="https://kry9ton.tech/js/wow.js"></script>
+<script src="https://kry9ton.tech/js/jquery.easing.js"></script>
+<script src="https://kry9ton.tech/js/main.js"></script>
+
+<script>
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+      //$('#nav').addClass('fixed-top');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+      //$('#nav').removeClass('fixed-top');
+    }
+  });
+
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top').fadeIn('slow');
+    //$('#nav').addClass('fixed-top');
+  }
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+</script>
+
+<script>
+  app.post('/incidents', function(req, res) {
+    secretKey = "6Lc3KLUZAAAAAGQS1128JESZtvXzYJEwxGG3cq6o";
+    var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+  
+    request(verificationUrl,function(error,response,body) {
+      body = JSON.parse(body);
+      // Success will be true or false depending upon captcha validation.
+      if(body.success !== undefined && !body.success) {
+        // handle error
+      } else {
+        // complete upload
+      }
+   })
+</script>

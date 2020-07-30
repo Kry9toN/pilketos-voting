@@ -65,20 +65,7 @@
                     <img src="../gambar/siswa/<?php echo $_SESSION['fotoskasis']; ?>" class="img-circle" alt="<?php echo $_SESSION['userskasis']; ?>">
                     <p>
                       <?php echo $_SESSION['namaskasis']; ?>
-                      <small><?php echo $_SESSION['emailskasis']; ?></small>
                     </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">SMA</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Pro</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">ANZ</a>
-                    </div>
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
@@ -90,10 +77,6 @@
                     </div>
                   </li>
                 </ul>
-              </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
               </li>
             </ul>
           </div>

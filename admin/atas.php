@@ -68,18 +68,6 @@
                       <small><?php echo $_SESSION['jabatankasis']; ?></small>
                     </p>
                   </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">SMA</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Pro</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">ANZ</a>
-                    </div>
-                  </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
@@ -90,10 +78,6 @@
                     </div>
                   </li>
                 </ul>
-              </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
               </li>
             </ul>
           </div>

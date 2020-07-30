@@ -15,12 +15,7 @@
 
 <?php include "../assets/includes/navbar.php"; ?>
 
-<div class="row" style="margin:50px;">
-  <h4 class="center">Admin login page</h4>
 <?php include "../assets/includes/login.php"; ?>
-</div>
-
-<?php include "../assets/includes/footer.php"; ?>
 
 <?php include "../assets/includes/js.php"; ?>
 

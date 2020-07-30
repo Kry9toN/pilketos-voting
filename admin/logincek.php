@@ -10,7 +10,7 @@ $b=mysqli_fetch_array($login);
 if($ketemu>0){
 	session_start();
     //if(isset($_COOKIE['cookielogin'])){
-    $_SESSION['idkasis'] 		= $b['idpengguna'];
+  $_SESSION['idkasis'] 		= $b['idpengguna'];
 	$_SESSION['userkasis'] 		= $b['username'];
 	$_SESSION['namakasis'] 		= $b['nama'];
 	$_SESSION['jabatankasis'] 	= $b['jabatan'];
@@ -43,7 +43,7 @@ if($ketemu>0){
 }else{
 	include "login.php";
 	echo '<script language="javascript">';
-		echo 'alert ("salah")';
+		echo 'document.getElementById("salah").innerHTML = "<div class=\'alert alert-danger\' role=\'alert\'>Username dan password anda tidak terdaftar!!</div>"';
 	echo '</script>';
 }
 ?>

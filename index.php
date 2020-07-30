@@ -4,10 +4,7 @@
     <!-- Required meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="/assets/img/icon.png">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Icon -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<?php include "assets/includes/head.php"; ?>
     <title>PILKETOS | SMKN 1 UDANAWU</title>
 
   </head>
@@ -15,28 +12,37 @@
 
 <?php include "assets/includes/navbar.php"; ?>
 
-    <div class="parallax-container">
-      <div class="parallax"><img src="/assets/img/gerbang.png"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-        <h4 class="header">Pilketos Online | SMKN 1 UDANAWU</h4>
-        <p class="grey-text text-darken-3 lighten-3">Untuk memulai memilih silakan login terlebih dahulu di bawah ini.</p>
-  <!-- Dropdown Trigger -->
-  <button class='dropdown-trigger btn waves-effect waves-light blue lighten-1 pulse' data-target='dropdown1'>Login</butoon>
+  <div class="container my-4">
+    <div class="row text-center">
+      <div class="col-12">
+        <h3>Pilketos Online SMK Negeri 1 Udanawu</h3>
+        <p>Selamat Datang di Situs Pilketos Online SMKN 1 Udanawu. Lembaga Pendidikan dituntut untuk mampu merespon hadirnya Revolusi Industri 4.0 dengan cara harus dapat menyesuaikan pola dan pendekatan pembelajaran berbasis teknologi dan internet, sehingga tercipta pola pembelajaran yang terstruktur dan terukur pada tiap materi pembelajaran yang ditawarkan kepada anak didik di semua jenjang.</p>
+        <p>Melalui pilketos online SMKN 1 Udanawu ini, siswa dapat memilih kandidat ketua OSIS masa bakti 2010/2021 tanpa keluar rumah untuk memutus rantai penularan virus COVID-19.</p>
       </div>
     </div>
+  </div>
 
-  <!-- Dropdown Structure -->
-  <ul id='dropdown1' class='dropdown-content blue-text text-lighten-1'>
-    <li><a href="/siswa" class="blue-text text-lighten-1">Sebagai Siswa</a></li>
-    <li><a href="/kandidat" class="blue-text text-lighten-1">Sebagai Kandidat</a></li>
-    <li><a href="/guru" class="blue-text text-lighten-1">Sebagai Guru</a></li>
-    <li><a href="/admin" class="blue-text text-lighten-1">Sebagai Admin</a></li>
-  </ul>
+<div id="call-to-action">
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-7 text-center text-lg-left">
+      <h3 class="cta-title animate__animated animate__jackInTheBox">Login!! untuk memilih</h3>
+      <p class="cta-text animate__animated animate__fadeInLeftBig"> Masuk sebagai Admin, Guru, Siswa, dan Gandidat.</p>
+    </div>
+    <div class="col-lg-5 cta-btn-container text-center">
+      <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/siswa"><i class="fas fa-users"></i> Siswa</a>
+      <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/guru"><i class="fas fa-chalkboard-teacher"></i> Guru</a>
+      <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/kandidat"><i class="fas fa-user-tie"></i> Kandidat</a>
+      <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/admin"><i class="fas fa-user-secret"></i> Admin</a>
+    </div>
+  </div>
+</div>
+</div>
 
-      <div class="container">
-		<h3 id="title-about"> KANDIDAT OSIS </h3>
+<section id="kandidat">
+<div class="container my-3 text-center">
+  <h3 class="card-title animate__animated animate__jackInTheBox">Kandidat OSIS</h3>
+    <div class="row">
 <?php
 include_once "sambungan.php";
 $sqljs="SELECT sum(jumlahsuara) as jsuara FROM kandidat";
@@ -45,54 +51,34 @@ $rjs=mysqli_fetch_array($queryjs);
 $sql="SELECT * FROM kandidat ORDER BY nokandidat";
 $query=mysqli_query($koneksi,$sql);
 while($r=mysqli_fetch_array($query)){
-	echo '
-					<div class="col-md-6 text-justify col-sm-6" id="text-about-left">
-						<center>';
+  echo '<div class="col-sm-6 my-3 animate__animated animate__fadeInLeft wow">
+        <div class="card">
+        <div class="card-body">';
+	echo '<div class="text-justify" id="text-about-left">
+	       <center>';
 	echo "<h3>No. ".$r['nokandidat']." - ".$r['nama']."</h3>";
-	echo '
-							<img src="gambar/kandidat/'.$r['foto'].'" class="img-circle" height="150px" alt id="img-about'.$r['nokandidat'].'">';
+	echo '<img src="gambar/kandidat/'.$r['foto'].'" class="img-circle" height="150px" alt id="img-about'.$r['nokandidat'].'">';
 	echo "<h2>".round(($r['jumlahsuara']/$rjs['jsuara']*100),2)."%</h2>";
-	echo $r['jumlahsuara']." suara";
-	echo '					</center>
+	echo "<div class='font-color'>".$r['jumlahsuara']." suara</div>";
+	echo '		</center>
+	        <div class="font-color">
 						<b>VISI:</b><br/>
 						<center>'.$r['visi'].'</center>
 						<b>MISI:</b><br/>
-							'.$r['misi'].'
+						'.$r['misi'].'
 					</div>';
+	echo '</div>
+	      </div>
+	      </div>
+	      </div>';
 }
 ?>
-     </div>
+  </div> 
+</div>
+</section>
 
-        <footer class="page-footer blue lighten-1">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2020 KryPtoN | XII TKJ 1.
-            <a class="grey-text text-lighten-4 right" href="https://github.com/kry9ton">Tentang KryPtoN</a>
-            </div>
-          </div>
-        </footer>
+<?php include "assets/includes/footer.php"; ?>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="/assets/js/style.js"></script>
+<?php include "assets/includes/js.php"; ?>
   </body>
 </html>

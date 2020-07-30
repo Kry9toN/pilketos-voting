@@ -1,0 +1,123 @@
+:root {
+  --color-gradient: rgba(41,105,255,0.700);
+  --color-gradient-second: rgba(41,105,255,0.1);
+}
+
+[data-theme="dark"] {
+  --color-gradient: rgba(255,68,81,0.700);
+  --color-gradient-second: rgba(255,68,81,0.1);
+}
+
+#call-to-action {
+  overflow: hidden;
+  background: linear-gradient(var(--color-gradient), var(--color-gradient-second)), url(/assets/img/halaman.jpg) fixed center center;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 25px;
+  transition: background 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: var(--color-accent);
+  border: 2px solid var(--color-accent);
+}
+
+@font-face {
+  font-family: 'linotte';
+  src: url('/assets/fonts/Linotte-Semi-Bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Linotte-Semi-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/Linotte-Semi-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/Linotte-Semi-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/Linotte-Semi-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    font-family: linotte;
+} 
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 136px;
+  margin-bottom: 136px;
+  padding: 0;
+}
+
+.modal-content {
+  background-color: var(--color-bg-second);
+  opacity: 0.95;
+  padding: 0 18px;
+  box-shadow:  0px 0px 3px var(--color-accent);
+}
+
+.user-img {
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+.user-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px var(--color-accent);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group input {
+  height: 42px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 18px;
+  padding-left: 54px;
+}
+
+.usr::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f2bd";
+  position: absolute;
+  font-size: 22px;
+  color: var(--color-accent);
+  left: 33px;
+  padding-top: 5px;
+  font-weight: 900;
+}
+
+.pw::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: "\f084";
+  position: absolute;
+  font-size: 22px;
+  color: var(--color-accent);
+  left: 33px;
+  padding-top: 5px;
+  font-weight: 900;
+}
+
+.btn {
+  width: 40%;
+  margin: 5px 0 25px;
+}

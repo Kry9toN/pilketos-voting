@@ -15,7 +15,7 @@ if($ketemu>0){
 }else{
 	include "login.php";
 	echo '<script language="javascript">';
-		echo 'alert ("Username/Password ada yang salah, atau akun anda belum Aktif")';
+		echo 'document.getElementById("salah").innerHTML = "<div class=\'alert alert-danger\' role=\'alert\'>Username dan password anda tidak terdaftar!!</div>"';
 	echo '</script>';
 }
 ?>

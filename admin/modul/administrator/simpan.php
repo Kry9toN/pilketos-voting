@@ -16,7 +16,7 @@ if(isset($_POST['simpan'])){
 	$tipefile=$_FILES['foto']['type'];
 	
 	if(empty($lokasi)){
-		$sql="INSERT INTO pengguna SET username='$pengguna', password='$sandi', nama='$nama', jabatan='$jabatan',hp='$hp',email='$surel', hakakses='$hakakses', aktif='$aktif'";
+		$sql="INSERT INTO pengguna SET username='$pengguna', password='$sandi', nama='$nama', jabatan='$jabatan',hp='$hp',email='$surel', hakakses='$hakakses', aktif='$aktif', foto=''";
 	}else{
 		$folder="../gambar/pengguna/";
 		$ukuran=100;
