@@ -80,5 +80,6 @@ while($r=mysqli_fetch_array($query)){
 <?php include "assets/includes/footer.php"; ?>
 
 <?php include "assets/includes/js.php"; ?>
+<script src="/assets/js/index.js"></script>
   </body>
 </html>

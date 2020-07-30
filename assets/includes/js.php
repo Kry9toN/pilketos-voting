@@ -4,7 +4,6 @@
 <script src="https://kry9ton.tech/js/bootstrap.js"></script>
 <script src="https://kry9ton.tech/js/wow.js"></script>
 <script src="https://kry9ton.tech/js/jquery.easing.js"></script>
-<script src="https://kry9ton.tech/js/main.js"></script>
 
 <script>
   $(window).scroll(function() {

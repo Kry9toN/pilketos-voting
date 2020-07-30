@@ -18,8 +18,7 @@
 <?php include "../assets/includes/login.php"; ?>
 
 <?php include "../assets/includes/js.php"; ?>
-
-    <script src="js/index.js"></script>
+<script src="/assets/js/login.js"></script>
 
 </body>
 
