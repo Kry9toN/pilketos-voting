@@ -63,6 +63,6 @@ function showpw() {
 <?php include "../assets/includes/js.php"; ?>
 
     <script src="js/index.js"></script>
--->
+
 </body>
 </html>

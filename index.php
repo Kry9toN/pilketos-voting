@@ -17,7 +17,7 @@
       <div class="col-12">
         <h3>Pilketos Online SMK Negeri 1 Udanawu</h3>
         <p>Selamat Datang di Situs Pilketos Online SMKN 1 Udanawu. Lembaga Pendidikan dituntut untuk mampu merespon hadirnya Revolusi Industri 4.0 dengan cara harus dapat menyesuaikan pola dan pendekatan pembelajaran berbasis teknologi dan internet, sehingga tercipta pola pembelajaran yang terstruktur dan terukur pada tiap materi pembelajaran yang ditawarkan kepada anak didik di semua jenjang.</p>
-        <p>Melalui pilketos online SMKN 1 Udanawu ini, siswa dapat memilih kandidat ketua OSIS masa bakti 2010/2021 tanpa keluar rumah untuk memutus rantai penularan virus COVID-19.</p>
+        <p>Melalui pilketos online SMKN 1 Udanawu ini, siswa dapat memilih kandidat ketua OSIS masa bakti 2020/2021 tanpa keluar rumah untuk memutus rantai penularan virus COVID-19.</p>
       </div>
     </div>
   </div>
