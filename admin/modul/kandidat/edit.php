@@ -54,7 +54,7 @@ $r=mysqli_fetch_assoc($query);
 					</tr>
 					<tr>
 						<td>Visi</td>
-						<td><input type="text" name="visi" placeholder="Visi" size="75px" maxlength="100px" value="<?php echo$r['visi'];?>" /></td>
+						<td><input type="text" name="visi" placeholder="Visi" size="75px" maxlength="250px" value="<?php echo$r['visi'];?>" /></td>
 					</tr>
 					<tr>
 						<td>Misi</td>
@@ -70,7 +70,7 @@ $r=mysqli_fetch_assoc($query);
 						<td>
 <?php
 						if ($r['foto']!=''){
-						  echo "<img src=\"../gambar/kandidat/$r[foto]\" height=150 />";  
+						  echo "<img src=\"../gambar/kandidat/$r[foto]\" height=150 />";
 						}
 						else{
 						  echo "<img src=\"../gambar/kandidat/0.jpg\">";

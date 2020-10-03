@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Waktu pembuatan: 30 Jul 2020 pada 06.05
--- Versi server: 10.4.13-MariaDB
--- Versi PHP: 7.4.7
+-- Waktu pembuatan: 30 Jul 2020 pada 13.31
+-- Versi server: 5.7.31-0ubuntu0.18.04.1
+-- Versi PHP: 7.2.24-0ubuntu0.18.04.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,7 +32,7 @@ CREATE TABLE `datapemilihan` (
   `tipe` varchar(5) COLLATE latin1_general_ci NOT NULL,
   `idpemilih` varchar(9) COLLATE latin1_general_ci DEFAULT NULL,
   `idkandidat` varchar(2) COLLATE latin1_general_ci NOT NULL,
-  `waktu` timestamp NOT NULL DEFAULT current_timestamp()
+  `waktu` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
@@ -69,8 +69,8 @@ CREATE TABLE `kandidat` (
   `nama` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `nokandidat` varchar(2) COLLATE latin1_general_ci NOT NULL,
   `jumlahsuara` varchar(4) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
-  `visi` varchar(100) COLLATE latin1_general_ci NOT NULL,
-  `misi` varchar(255) COLLATE latin1_general_ci NOT NULL,
+  `visi` varchar(500) COLLATE latin1_general_ci NOT NULL,
+  `misi` varchar(1000) COLLATE latin1_general_ci NOT NULL,
   `aktif` enum('Y','T') COLLATE latin1_general_ci NOT NULL DEFAULT 'T',
   `foto` varchar(50) COLLATE latin1_general_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
@@ -80,8 +80,11 @@ CREATE TABLE `kandidat` (
 --
 
 INSERT INTO `kandidat` (`idkandidat`, `username`, `password`, `nama`, `nokandidat`, `jumlahsuara`, `visi`, `misi`, `aktif`, `foto`) VALUES
-(1, 'kandidat1', '8f23e4acba1b7f45423b930e7cfadbd0', 'Tuan dan Puan', '2', '2', 'Mejadikan sekolah ini sebagai sekolah SMA Favorit karena OSIS-nya', '<ol><li>Tahun ini harus haji semua pengurus OSISnya</li><li>\r\nMenjadikan bla..bla...</li><li>\r\njadinya hahahaha</li><li>\r\napa yah</li><li>\r\nbukan deh</li></ol>', 'Y', '411.jpg'),
-(2, 'muhidin', 'c0f6e70583525a8a265e19de06d6bff8', 'Muhidin', '1', '5', 'Menjadikan sebagai OSIS terbaik sekota Depok', '<ol><li>Membuat pengajian rutin</li><li>\nMengundang pembicara kaliber nasional per 3 bulan ke acara OSIS</li><li>lain-lain</li></ol>', 'Y', 'AllahWithUs.jpg');
+(1, 'kandidat1', '8f23e4acba1b7f45423b930e7cfadbd0', 'ASLAMATUL DIANING PRAMESWARI INDRIANI', '1', '0', 'Menambah wawasan siswa-siswi SMKN 1 UDANAWU supaya menjadi siswa-siswi  penerus bangsa yang berkualitas dan berpotensi tinggi.', '<ol><li>Menambah ketakwaan kepada Tuhan Yang Maha Esa</li><li>Menambah kedisiplinan dalam menaati dan mematuhi semua peraturan yang ada</li><li>Menggali dan mengembangkan potensi yang dimiliki siswa</li><li>Mengembangkan lingkungan yang bersih, indah, hijau, dan ramah.</li><li>Mengembangkan bidang ilmu pengetahuan dan teknologi berdasarkan minat bakat dan potensi siswa</li></ol>', 'Y', '20200728_205133.png'),
+(2, 'kandidat2', '2bffe16305577d9689a200067b878f65', 'ELLY DWI SAPUTRA', '2', '0', 'Menjadikan smkn 1 udanawu menjadi smk yang harmonis, berkualitas, bertanggung jawab, berprestasi dengan berlandaskan iman dan taqwa kepada tuhan', '<ol><li>Menanamkan sikap disiplin pada semua siswa</li><li>\r\nMelanjutkan program osis yang belum terselesaikan di periode sebelumnya</li><li>\r\nMengoptimalkan fungsi dan peranan osis dan meningkatkan kinerja dan kerja sama\r\nkhususnya dalam organisasi siswa</li><li>\r\nMeningkatkan kembali kesadaran siswa mengenai pentingnya menjaga kebersihan dan\r\nkeamanan lingkungan sekolah</li><li>\r\nMemfasilitasi, memajukan, dan mengembangkan kreatifitas, bakat, minat serta potensi\r\nsiswa melalui kegiatan maupun organisasi yang ada agar menjadi sebuah prestasi</li><li>\r\nMenumbuh kembangkan serta memperkokoh keimanan dan ketaqwaan kepada tuhan\r\nmelalui pembinaan rohani dan kegiatan keagamaan</li></ol>', 'Y', '20200728_205137.png'),
+(3, 'kandidat3', 'c366c79b1df7ef9cce13d260b3fd0bcd', 'AFIFA RULIANA', '3', '0', 'Menjadikan SMKN 1 UDANAWU sebagai sekolah yang unggul, berprestasi dengan berwawasan lingkungan yang berakarkan pada ketuhanan yang maha esa. ', '<ol><li>Menumbuh kembangkan keimanan dan ketaqwaan pada tuhan dengan kegiatan keagamaan</li><li>Siswa dapat mengembangkan seluruh potensinya sesuai bakat dan minat</li><li>Meningkatkan pengawasan terhadap perilaku siswa saat berada dalam sekolah</li><li>Menjalin kerjasama yang baik antar penduduk sekolah dan sekelilingnya di dalam berbagai event dan kegiatan demi mewujudkan kemajuan sekolah bersama.</li></ol>', 'Y', '20200728_205139.png'),
+(4, 'kandidat4', '6e444803b5d6b561083250cb1be7b64b', 'TOTOK DWI PRAKOSO', '4', '0', 'MEWUJUDKAN SMK NEGERI 1 UDANAWU MENJADI SEKOLAH UNGGUL, SERTA MENDORONG SISWANYA BERBUDI PEKERTI LUHUR.', '<ol><li>MENUMBUHKAN PERILAKU PEDULI LINGKUNGAN</li><li>\r\nMENCIPTAKAN SUATU</li><li>\r\nKEGIATAN YANG DAPAT MENGASAH POTENSI SISWA</li><li>\r\nMERANGKUL EKSKUL DAN MENJALIN HUBUNGAN BAIK DENGAN SISWA</li><li>\r\nMENUMBUHKAN SIKAP DISIPLIN.</li></ol>', 'Y', 'IMG-20200730-WA0020.jpg'),
+(5, 'kandidat5', '6bc4798eeab61ce7d27d00307e950d63', 'MUHAMMAD IKFI ZAM ZAM AUDI', '5', '0', '', '', 'Y', 'IMG-20200730-WA0022.jpg');
 
 -- --------------------------------------------------------
 
@@ -128,7 +131,7 @@ CREATE TABLE `pengguna` (
 INSERT INTO `pengguna` (`idpengguna`, `username`, `password`, `nama`, `jabatan`, `hp`, `email`, `hakakses`, `aktif`, `foto`) VALUES
 (1, 'krypton', '822f87e6ab25a25381caa0b1ae4d0963', 'Dhimas Bagus Prayoga', 'Owner', '085156296594', 'idontgiveashit@kry9ton.tech', 'Admin', 'Y', 'IMG_20200621_082109_544.jpg'),
 (13, 'fakrun', 'c53ec9e997813e9e314ff9c6c866e86b', 'Fuckrun', 'Tukang ngeteh', '0908', 'uwu@gmail.com', 'Admin', 'Y', ''),
-(14, 'venita', '2084e85dcddff802f8fb29ae6cd9c773', 'Venita', 'Ngekoni', '090', 'hh@gmail.com', 'Admin', 'Y', '');
+(14, 'Vennita', '398da702a25dcad95d9ce7722920b7f8', 'Vennita Aprilia', 'Ngekoni', '+6282141904570', 'vennitaaprilia886@gmail.com', 'Admin', 'Y', 'bcba29bc-117e-41c6-ae5e-7764c01d2cea.jpg');
 
 -- --------------------------------------------------------
 
@@ -209,7 +212,7 @@ ALTER TABLE `datapemilihan`
 -- AUTO_INCREMENT untuk tabel `kandidat`
 --
 ALTER TABLE `kandidat`
-  MODIFY `idkandidat` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idkandidat` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `kelas`

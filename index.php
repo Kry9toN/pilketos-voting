@@ -42,7 +42,15 @@
 <section id="kandidat">
 <div class="container my-3 text-center">
   <h3 class="card-title animate__animated animate__jackInTheBox">Kandidat OSIS</h3>
+
+    <div class="card">
+       <div class="card-body">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/MbCtqhkUcxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+    </div>
+
     <div class="row">
+
 <?php
 include_once "sambungan.php";
 $sqljs="SELECT sum(jumlahsuara) as jsuara FROM kandidat";

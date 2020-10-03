@@ -46,7 +46,7 @@
 					</tr>
 					<tr>
 						<td>Visi</td>
-						<td><input type="text" name="visi" placeholder="Visi" size="76px" maxlength="100px" /></td>
+						<td><input type="text" name="visi" placeholder="Visi" size="76px" maxlength="250px" /></td>
 					</tr>
 					<tr>
 						<td>Misi</td>
