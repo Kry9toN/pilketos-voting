@@ -69,8 +69,8 @@ while($r=mysqli_fetch_array($query)){
 	       <center>';
 	echo "<h3>No. ".$r['nokandidat']." - ".$r['nama']."</h3>";
 	echo '<img src="gambar/kandidat/'.$r['foto'].'" class="img-circle" height="150px" alt id="img-about'.$r['nokandidat'].'">';
-	echo "<h2>".round(($r['jumlahsuara']/$rjs['jsuara']*100),2)."%</h2>";
-	echo "<div class='font-color'>".$r['jumlahsuara']." suara</div>";
+	//echo "<h2>".round(($r['jumlahsuara']/$rjs['jsuara']*100),2)."%</h2>";
+	//echo "<div class='font-color'>".$r['jumlahsuara']." suara</div>";
 	echo '		</center>
 	        <div class="font-color">
 						<b>VISI:</b><br/>

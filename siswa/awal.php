@@ -46,8 +46,8 @@ echo '        <div class="col-lg-3 col-xs-6">
           <div class="small-box bg-aqua">
             <div class="inner">';
 echo "<h3>".$r['nokandidat']."</h3>";
-echo "<h2>".($r['jumlahsuara']/$rjs['jsuara']*100)."%</h2>";
-echo $r['jumlahsuara']." suara<br><b>";
+//echo "<h2>".($r['jumlahsuara']/$rjs['jsuara']*100)."%</h2>";
+//echo $r['jumlahsuara']." suara<br><b>";
 echo $r['nama']."</b>";
 echo '            </div>
             <div class="icon">
