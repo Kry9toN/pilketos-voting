@@ -23,10 +23,10 @@
       <span id="salah"></span>
     <form method="post" action="logincek.php">
       <div class="form-group usr">
-        <input class="form-control" id="usr" placeholder="Nama lengkap" name="nama" type="text" required="required">
+        <input class="form-control" id="usr" placeholder="Username" name="nama" type="text" required="required">
       </div>
       <div class="form-group pw">
-        <input type="password" id="pw" class="form-control" placeholder="Nomor Induk Pegawai" name="password" required="required">
+        <input type="password" id="pw" class="form-control" placeholder="Password" name="password" required="required">
       </div>
       <div class="row">
       <div class="custom-control custom-checkbox my-3 col-7">
