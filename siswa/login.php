@@ -23,7 +23,7 @@
       <span id="salah"></span>
     <form method="post" action="logincek.php">
       <div class="form-group usr">
-        <input class="form-control" id="usr" aria-describedby="emailHelp" placeholder="name" name="username" type="text" required="required">
+        <input class="form-control" id="usr" aria-describedby="emailHelp" placeholder="nama" name="nama" type="text" required="required">
       </div>
       <div class="form-group pw">
         <input type="password" id="pw" class="form-control" placeholder="Nomor Indux Siswa" name="password" required="required">
