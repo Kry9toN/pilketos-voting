@@ -45,7 +45,10 @@
 
     <div class="card">
        <div class="card-body">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/MbCtqhkUcxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <h3>Video visi misi semua kandidat.</h3>
+          <div class="embed-responsive embed-responsive-16by9">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/MbCtqhkUcxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
        </div>
     </div>
 
