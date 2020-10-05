@@ -38,7 +38,7 @@ $r=mysqli_fetch_assoc($query);
 					<input type="hidden" name="id" value="<?php echo$r['idkelas'];?>" />
 					<tr>
 						<td width=150>Nama Kelas*</td>
-						<td><input type="text" name="kelas" placeholder="Kelas" size="20px" maxlength="7px" value="<?php echo$r['kelas'];?>" required /></td>
+						<td><input type="text" name="kelas" placeholder="Kelas" size="20px" maxlength="20px" value="<?php echo$r['kelas'];?>" required /></td>
 					</tr>
 					<tr>
 						<td>Jumlah Siswa</td>

@@ -30,7 +30,7 @@
                 <tbody>
 					<tr>
 						<td width=174>Nama Kelas*</td>
-						<td><input type="text" name="kelas" placeholder="Kelas" size="20px" maxlength="25px" required /></td>
+						<td><input type="text" name="kelas" placeholder="Kelas" size="20px" maxlength="20px" required /></td>
 					</tr>
 					<tr>
 						<td>Jumlah Siswa</td>
