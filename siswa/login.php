@@ -50,7 +50,7 @@
 <!-- Fungsi Show Password -->
 <script>
 function showpw() {
-  var x = document.getElementById("ig");
+  var x = document.getElementById("pw");
   if (x.type === "password") {
     x.type = "text";
   } else {
