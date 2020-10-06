@@ -30,7 +30,7 @@
                 <tbody>
 					<tr>
 						<td width=174>No Induk Siswa*</td>
-						<td><input type="number" name="nis" placeholder="Nomor Induk" size="10px" maxlength="9px" required /><small> maksimal 9 karakter</small></td>
+						<td><input type="text" name="nis" placeholder="Nomor Induk" size="10px" maxlength="9px" required /><small> maksimal 9 karakter</small></td>
 					</tr>
 					<tr>
 						<td>Nama Lengkap*</td>
