@@ -38,18 +38,23 @@
 </div>
 </div>
 
+<div class="text-center ">
+  <img src="/assets/img/among.png" class="img-fluid animate__animated animate__jello wow">
+</div>
+
 <section id="kandidat">
 <div class="container my-3 text-center">
-  <h3 class="card-title animate__animated animate__jackInTheBox">Kandidat OSIS</h3>
+  <h3 class="card-title animate__animated animate__jackInTheBox">Voting yang menjadi impostor</h3>
+  <hr>
 
-    <div class="card">
+<!--    <div class="card">
        <div class="card-body">
        <h3>Video visi misi semua kandidat.</h3>
           <div class="embed-responsive embed-responsive-16by9">
              <iframe width="560" height="315" src="https://www.youtube.com/embed/MbCtqhkUcxU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
        </div>
-    </div>
+    </div> -->
 
     <div class="row">
 
@@ -70,13 +75,13 @@ while($r=mysqli_fetch_array($query)){
 	echo '<img src="gambar/kandidat/'.$r['foto'].'" class="img-circle" height="150px" alt id="img-about'.$r['nokandidat'].'">';
 	//echo "<h2>".round(($r['jumlahsuara']/$rjs['jsuara']*100),2)."%</h2>";
 	//echo "<div class='font-color'>".$r['jumlahsuara']." suara</div>";
-	echo '		</center>
+/*	echo '		</center>
 	        <div class="font-color">
 						<b>VISI:</b><br/>
 						<center>'.$r['visi'].'</center>
 						<b>MISI:</b><br/>
 						'.$r['misi'].'
-					</div>';
+					</div>'; */
 	echo '</div>
 	      </div>
 	      </div>
