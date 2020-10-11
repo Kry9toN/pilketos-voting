@@ -39,7 +39,7 @@
 </div>
 
 <div class="text-center ">
-  <img src="/assets/img/among.png" class="img-fluid animate__animated animate__jello wow">
+  <img src="/assets/img/among.gif" class="img-fluid">
 </div>
 
 <section id="kandidat">
