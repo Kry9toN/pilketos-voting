@@ -67,6 +67,7 @@ function pageRedirectGuru() {
 
 <?php include "../assets/includes/js.php"; ?>
 <script src="/assets/js/login.js"></script>
+<script src="/assets/js/countdown.js"></script>
 
 </body>
 </html>

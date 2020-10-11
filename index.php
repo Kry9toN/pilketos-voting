@@ -22,7 +22,7 @@
     </div>
   </div>
 
-<div class="container">
+<div class="container my-4">
   <div class="card">
     <div class="card-body">
       <div class="text-center"></div>
@@ -108,5 +108,6 @@ while($r=mysqli_fetch_array($query)){
 
 <?php include "assets/includes/js.php"; ?>
 <script src="/assets/js/index.js"></script>
+<script src="/assets/js/countdown.js"></script>
   </body>
 </html>
