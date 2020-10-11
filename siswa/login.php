@@ -66,7 +66,7 @@ function pageRedirectSiswa() {
 
 <?php include "../assets/includes/js.php"; ?>
 <script src="/assets/js/login.js"></script>
-<script src="/assets/js/countdown.js"></script>
+<script src="/assets/js/countdownsiswa.js"></script>
 
 </body>
 </html>

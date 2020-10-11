@@ -1,7 +1,7 @@
  jQuery(document).ready(function($) {
  
   // Set the date we're counting down to
-  var countDownDate = new Date("Oct 11, 2020 14:37:25").getTime();
+  var countDownDate = new Date("Oct 11, 2020 11:37:25").getTime();
   
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -18,16 +18,10 @@
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-    // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "h " + hours + "j "
-    + minutes + "m " + seconds + "d ";
-  
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("countdown").innerHTML = "WAKTU HABIS";
       pageRedirectGuru();
-      pageRedirectSiswa();
     }
   }, 1000);
 

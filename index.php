@@ -39,7 +39,7 @@
   <div class="row">
     <div class="col-lg-7 text-center text-lg-left">
       <h3 class="cta-title animate__animated animate__jackInTheBox">Login!! untuk memilih</h3>
-      <p class="cta-text animate__animated animate__fadeInLeftBig"> Masuk sebagai Admin, Guru, Siswa, dan Gandidat.</p>
+      <p class="cta-text animate__animated animate__fadeInLeftBig"> Masuk sebagai Admin, Guru, dan Siswa..</p>
     </div>
     <div class="col-lg-5 cta-btn-container text-center">
       <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/siswa"><i class="fas fa-users"></i> Siswa</a>
@@ -107,7 +107,8 @@ while($r=mysqli_fetch_array($query)){
 <?php include "assets/includes/footer.php"; ?>
 
 <?php include "assets/includes/js.php"; ?>
+
 <script src="/assets/js/index.js"></script>
-<script src="/assets/js/countdown.js"></script>
+<script src="/assets/js/countdownindex.js"></script>
   </body>
 </html>
