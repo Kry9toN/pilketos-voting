@@ -32,7 +32,6 @@
     <div class="col-lg-5 cta-btn-container text-center">
       <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/siswa"><i class="fas fa-users"></i> Siswa</a>
       <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/guru"><i class="fas fa-chalkboard-teacher"></i> Guru</a>
-      <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/kandidat"><i class="fas fa-user-tie"></i> Kandidat</a>
       <a class="cta-btn align-middle animate__animated animate__backInLeft wow" href="/admin"><i class="fas fa-user-secret"></i> Admin</a>
     </div>
   </div>
