@@ -25,7 +25,7 @@
 <div class="container my-4">
   <div class="card">
     <div class="card-body">
-      <div class="text-center"></div>
+      <div class="text-center">
         <h3>Waktu pemilihan tinggal :</h3>
         <h5 id="countdown"></h5>
         <p>Voting/pilih sebelum terlambat</p>
