@@ -38,7 +38,7 @@
 </div>
 </div>
 
-<div class="text-center ">
+<div class="text-center my-3">
   <img src="/assets/img/among.gif" class="img-fluid">
 </div>
 
