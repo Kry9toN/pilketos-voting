@@ -57,6 +57,11 @@ function showpw() {
     x.type = "password";
   }
 }
+
+function pageRedirectSiswa() {
+  alert("Simulasi hari ini telah selesai");
+  window.location.replace("https://pilketos.kry9ton.tech/");
+}
 </script>
 
 <?php include "../assets/includes/js.php"; ?>

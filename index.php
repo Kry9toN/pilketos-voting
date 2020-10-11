@@ -22,6 +22,18 @@
     </div>
   </div>
 
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="text-center"></div>
+        <h3>Waktu pemilihan tinggal :</h3>
+        <h5 id="countdown"></h5>
+        <p>Voting/pilih sebelum terlambat</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="call-to-action">
   <div class="container">
   <div class="row">
