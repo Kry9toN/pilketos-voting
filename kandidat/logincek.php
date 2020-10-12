@@ -1,8 +1,8 @@
 <?php
 include_once "../sambungan.php";
 
-$user = $_POST['username'];
-$pass = md5($_POST['password']);
+$user = mysqli_real_escape_string($_POST['username']);
+$pass = md5(mysqli_real_escape_string($_POST['password']));
 $sql = "SELECT * FROM kandidat WHERE username='$user' AND password='$pass' AND aktif='Y'";
 $login=mysqli_query($koneksi,$sql);
 $ketemu=mysqli_num_rows($login);

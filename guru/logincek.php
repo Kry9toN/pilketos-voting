@@ -1,8 +1,8 @@
 <?php
 include_once "../sambungan.php";
 
-$nama = $_POST['nama'];
-$pass = md5($_POST['password']);
+$nama = mysqli_real_escape_string($_POST['nama']);
+$pass = md5(mysqli_real_escape_string($_POST['password']));
 $sql = "SELECT * FROM guru WHERE nama='$nama' AND password='$pass'";
 $login=mysqli_query($koneksi,$sql);
 $ketemu=mysqli_num_rows($login);
