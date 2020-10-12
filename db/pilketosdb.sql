@@ -51,7 +51,7 @@ INSERT INTO `datapemilihan` (`idpemilihan`, `tipe`, `idpemilih`, `idkandidat`, `
 CREATE TABLE `guru` (
   `nip` varchar(9) NOT NULL,
   `nane` varchar(50) NOT NULL,
-  `password` varchar(32) NOT NULL,
+  `password` text NOT NULL,
   `memilih` varchar(10) NOT NULL DEFAULT 'belum',
   `aktif` enum('Y','T') NOT NULL DEFAULT 'Y'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -65,7 +65,7 @@ CREATE TABLE `guru` (
 CREATE TABLE `kandidat` (
   `idkandidat` int(2) NOT NULL,
   `username` varchar(25) COLLATE latin1_general_ci NOT NULL,
-  `password` varchar(32) COLLATE latin1_general_ci NOT NULL,
+  `password` text COLLATE latin1_general_ci NOT NULL,
   `nama` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `nokandidat` varchar(2) COLLATE latin1_general_ci NOT NULL,
   `jumlahsuara` varchar(4) COLLATE latin1_general_ci NOT NULL DEFAULT '0',
@@ -114,7 +114,7 @@ INSERT INTO `kelas` (`idkelas`, `kelas`, `jumlah`) VALUES
 CREATE TABLE `pengguna` (
   `idpengguna` int(2) NOT NULL,
   `username` varchar(25) NOT NULL,
-  `password` varchar(32) NOT NULL,
+  `password` text NOT NULL,
   `nama` varchar(50) NOT NULL,
   `jabatan` varchar(30) NOT NULL,
   `hp` varchar(15) NOT NULL,
@@ -142,7 +142,7 @@ INSERT INTO `pengguna` (`idpengguna`, `username`, `password`, `nama`, `jabatan`,
 CREATE TABLE `siswa` (
   `nis` varchar(9) NOT NULL,
   `nama` varchar(50) NOT NULL,
-  `password` varchar(32) NOT NULL,
+  `password` text NOT NULL,
   `idkelas` varchar(2) NOT NULL,
   `aktif` enum('Y','T') NOT NULL DEFAULT 'Y',
   `memilih` varchar(10) NOT NULL DEFAULT 'belum'

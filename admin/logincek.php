@@ -2,7 +2,7 @@
 include_once "../sambungan.php";
 
 $user = mysqli_real_escape_string($koneksi, $_POST['username']);
-$pass = mysqli_real_escape_string($_POST['password']);
+$pass = $_POST['password'];
 $sql = "SELECT * FROM pengguna WHERE username='$user' AND aktif='Y'";
 $login=mysqli_query($koneksi,$sql);
 $ketemu=mysqli_num_rows($login);
