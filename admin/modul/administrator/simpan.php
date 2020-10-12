@@ -4,7 +4,7 @@ if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
 	$pengguna=$_POST['username'];
-	$sandi	=md5(trim($_POST['password']));
+	$sandi	=password_hash(trim($_POST['password']), PASSWORD_DEFAULT);
 	$nama	=$_POST['nama'];
 	$jabatan=$_POST['jabatan'];
 	$hp		=$_POST['hp'];

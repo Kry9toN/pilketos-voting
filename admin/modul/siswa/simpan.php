@@ -5,7 +5,7 @@ if(isset($_POST['simpan'])){
 	$nama	=$_POST['nama'];
 	$nis	=$_POST['nis'];
 	$idkelas=$_POST['idkelas'];
-        $pass=md5($_POST['nis']);
+    $pass=password_hash($_POST['nis'], PASSWORD_DEFAULT);
 
 	$sql="INSERT INTO siswa SET nis='$nis', nama='$nama', password='$pass', idkelas='$idkelas'";
 	$simpan=mysqli_query($koneksi,$sql);
