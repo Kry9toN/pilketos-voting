@@ -3,7 +3,7 @@ if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
 	$kandidat=$_POST['username'];
-	$sandi	=md5($_POST['password']);
+	$sandi	=password_hash($_POST['password'], PASSWORD_DEFAULT);
 	$nama	=$_POST['nama'];
 	$nokandidat=$_POST['nokandidat'];
 	$aktif	=$_POST['aktif'];

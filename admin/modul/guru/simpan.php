@@ -2,7 +2,7 @@
 if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
-	$sandi	=md5($_POST['nip']);
+	$sandi	=password_hash($_POST['nip'], PASSWORD_DEFAULT);
 	$nip	=$_POST['nip'];
 	$nama	=$_POST['nama'];
 

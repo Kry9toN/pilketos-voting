@@ -3,7 +3,7 @@ if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	$id=$_POST['id'];
 	$pengguna=$_POST['username'];
-	$sandi	=md5($_POST['password']);
+	$sandi	=password_hash($_POST['password'], PASSWORD_DEFAULT);
 	$nama	=$_POST['nama'];
 	$jabatan=$_POST['jabatan'];
 	$hp		=$_POST['hp'];
