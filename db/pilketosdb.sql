@@ -50,7 +50,7 @@ INSERT INTO `datapemilihan` (`idpemilihan`, `tipe`, `idpemilih`, `idkandidat`, `
 
 CREATE TABLE `guru` (
   `nip` varchar(9) NOT NULL,
-  `nane` varchar(50) NOT NULL,
+  `nama` varchar(50) NOT NULL,
   `password` text NOT NULL,
   `memilih` varchar(10) NOT NULL DEFAULT 'belum',
   `aktif` enum('Y','T') NOT NULL DEFAULT 'Y'
