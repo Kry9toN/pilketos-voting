@@ -1,4 +1,5 @@
 <?php
+set_time_limit(300);
 if(isset($_POST['simpan'])){
 	include "../sambungan.php";
 	include "../fungsi/upload.php";
@@ -40,7 +41,7 @@ require '../assets/phpspreadsheet/vendor/autoload.php';
 	for($i = 1;$i < count($sheetData);$i++) {
         $nis = $sheetData[$i]['1'];
         $nama = $sheetData[$i]['2'];
-        $pass = md5($sheetData[$i]['1']);
+        $pass = password_hash($sheetData[$i]['1'], PASSWORD_DEFAULT);
         $kelas = $sheetData[$i]['3'];
         $sql .= " ('$nis','$nama','$pass','$kelas'),";
         }

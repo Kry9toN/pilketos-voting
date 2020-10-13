@@ -40,7 +40,7 @@ require '../assets/phpspreadsheet/vendor/autoload.php';
         for($i = 1;$i < count($sheetData);$i++) {
         $nip = $sheetData[$i]['1'];
         $nama = $sheetData[$i]['2'];
-        $pass = md5($sheetData[$i]['1']);
+        $pass = password_hash($sheetData[$i]['1'], PASSWORD_DEFAULT);
         $sql .= " ('$nip','$nama','$pass'),";
         }
         $sql = substr($sql, 0, -1);

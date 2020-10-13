@@ -1,7 +1,7 @@
 <?php
 include_once "../sambungan.php";
 
-$user = mysqli_real_escape_string($_POST['username']);
+$user = mysqli_real_escape_string($koneksi,$_POST['username']);
 $pass = $_POST['password'];
 $sql = "SELECT * FROM kandidat WHERE username='$user' AND aktif='Y'";
 $login=mysqli_query($koneksi,$sql);

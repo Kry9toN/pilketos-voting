@@ -60,7 +60,7 @@ function showpw() {
 }
 
 function pageRedirectGuru() {
-  alert("Simulasi hari ini telah selesai");
+  alert("Pemilu telah selesai");
   window.location.replace("https://pilketos.kry9ton.tech/");
 }
 </script>
