@@ -1,7 +1,7 @@
 <?php
 include_once "../sambungan.php";
 
-$nama = mysqli_real_escape_string($_POST['nama']);
+$nama = mysqli_real_escape_string($koneksi,$_POST['nama']);
 $pass = $_POST['password'];
 $sql = "SELECT * FROM siswa WHERE nama='$nama'";
 $login=mysqli_query($koneksi,$sql);
